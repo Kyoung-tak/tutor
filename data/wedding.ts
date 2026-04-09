@@ -11,24 +11,24 @@ export type ContactPerson = {
 
 export const weddingData = {
   seo: {
-    title: "이도윤 · 한서윤 모바일 청첩장",
+    title: "김경탁 · 정은미 모바일 청첩장",
     description: "소중한 분들을 예식에 정중히 초대합니다."
   },
   couple: {
     groom: {
-      name: "이도윤",
+      name: "김경탁",
       image: "/images/groom.svg",
       parents: "이정호 · 김미경의 장남"
     },
     bride: {
-      name: "한서윤",
+      name: "정은미",
       image: "/images/bride.svg",
       parents: "한승우 · 박지연의 장녀"
     }
   },
   wedding: {
-    datetime: "2026-10-18T13:00:00+09:00",
-    dateText: "2026년 10월 18일 일요일",
+    datetime: "2013-10-26T13:00:00+09:00",
+    dateText: "2013년 10월 26일 토요일",
     timeText: "오후 1시",
     venueName: "라움 아트센터 마제스틱홀",
     hallFloor: "2층 마제스틱홀",
