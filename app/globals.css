@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8f3ee;
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-strong: rgba(255, 255, 255, 0.9);
+  --text: #3f332d;
+  --muted: #7b6a5f;
+  --line: rgba(104, 84, 72, 0.14);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.95), transparent 35%),
+    linear-gradient(180deg, #fcf8f4 0%, #f6efe7 52%, #f3ebe3 100%);
+  color: var(--text);
+  font-family:
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Segoe UI", sans-serif;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: radial-gradient(rgba(183, 155, 108, 0.08) 0.8px, transparent 0.8px);
+  background-size: 18px 18px;
+  content: "";
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+::selection {
+  background: rgba(183, 155, 108, 0.28);
+}
+
+.title-font {
+  font-family:
+    "Iowan Old Style", "Palatino Linotype", "Times New Roman", "Noto Serif KR", serif;
+  letter-spacing: -0.02em;
+}
+
+.glass-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(18px);
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(183, 155, 108, 0.6), transparent);
+}
